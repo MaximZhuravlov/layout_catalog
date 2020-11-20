@@ -6,6 +6,11 @@
 
   &__img {
     margin: 0 auto 41px 5px;
+    transition: transform $transition-duration;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__img-image {
@@ -71,7 +76,7 @@
     text-transform: uppercase;
     border-radius: $card-border-radius;
     border: 1px solid transparent;
-    transition: all 0.3s;
+    transition: all $transition-duration;
 
     &:hover {
       color: $emphasis-color;

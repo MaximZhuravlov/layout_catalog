@@ -3,11 +3,9 @@
   margin: 0 auto;
 
   &__inner {
-    @include flex-space-between;
-    flex-wrap: wrap;
-  }
-
-  &__card {
-    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 50px 48px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, $card-width);
   }
 }
